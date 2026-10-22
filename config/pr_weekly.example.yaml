@@ -1,0 +1,17 @@
+# Add under workflow: in config/config.yaml (local only; not committed)
+# Sunday 00:00 Asia/Shanghai → fill 项目方PR链接推送 → ping 运营&品宣＆BD对接群
+pr_weekly:
+  enabled: true
+  chat_id: "oc_xxxxxxxx"  # 运营&品宣＆BD对接群
+  table_id: "tblxxxxxxxx"
+  view_id: "vewxxxxxxxx"
+  table_url: "https://your-tenant.larksuite.com/base/basetoken?table=tblxxxxxxxx&view=vewxxxxxxxx"
+  weekday: 6   # Monday=0, Sunday=6
+  hour: 0
+  state_file: "data/pr_weekly_state.json"
+  events_file: "/opt/botchain-shared/pr_capture_events.jsonl"
+  assignees:
+    - name: "Assignee A"
+      open_id: "ou_xxxxxxxx"
+    - name: "Assignee B"
+      open_id: "ou_xxxxxxxx"

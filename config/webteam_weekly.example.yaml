@@ -1,0 +1,12 @@
+# Add under workflow: in config/config.yaml (local only; not committed)
+# Sunday 00:00 Asia/Shanghai → fill 官网项目收集-每周更新 → ping frontend
+webteam_weekly:
+  enabled: true
+  chat_id: "oc_xxxxxxxx"  # 项目方信息整理&推送（钱包/ logo/官网）
+  at_open_id: "ou_xxxxxxxx"  # frontend
+  at_name: "前端"
+  table_id: "tblxxxxxxxx"
+  view_id: "vewxxxxxxxx"
+  weekday: 6   # Monday=0, Sunday=6
+  hour: 0
+  state_file: "data/webteam_weekly_state.json"
